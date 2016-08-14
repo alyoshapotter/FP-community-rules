@@ -9,7 +9,7 @@ You can download Approof here: https://approof.ptsecurity.com/
 
 Fingerprint rules are written in YARA syntax: http://yara.readthedocs.io/en/v3.5.0/writingrules.html
 
-To upload custom rules use **"Add Yara rules"** option in main menu or just place rules to `%LOCALAPPDATA%\Approof\YaraRules\` 
+To upload custom rules use **"Add Yara rules"** option in main menu or just place rules to `%LOCALAPPDATA%\Approof\YaraRules\`
 
 ## To contributors:
 Please send us your pull requests!
