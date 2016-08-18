@@ -8,7 +8,7 @@ private rule php_file
 			$start
 }
 
-rivate rule xml_file
+private rule xml_file
 {
 	meta:
 			custom_description = "Private rule for identifying xml files"
@@ -43,7 +43,7 @@ private rule YiiFramework
 	meta:
 			custom_description = "Private rule for indentifying YiiFramework"
 	strings:
-			$baseyii = /^class BaseYii/ nocase
+			$baseyii = /class BaseYii/ nocase
 	condition:
 			$baseyii
 }
@@ -51,13 +51,13 @@ private rule YiiFramework
 private rule com_aicontactsafe
 {
 	// @product = "Joomla"
-	// @product_root = "TBD"
-	// @detected_file = "/aicontactsafe.xml"
+	// @product_root = "../../../"
+	// @marker_file = "/administrator/components/com_aicontactsafe/aicontactsafe.xml"
 	
 	meta:
 			custom_description = "Private rule for indentifying aicontactsafe component from Joomla CMS"
 	strings:
-			$name = /^<name>aiContactSafe<\/name>$/ nocase
+			$name = /<name>aiContactSafe<\/name>/ nocase
 	condition:	
 			$name
 }
