@@ -2,7 +2,7 @@ rule CVE_2015_8476
 {
 	meta:
 			component_name = "PHPMailer"
-            component_version = "5.2.13 and below"
+            component_version = "5.2.13 и ниже"
             custom_title = "CVE-2015-8476 Multiple CRLF injection vulnerabilities in PHPMailer before 5.2.14"
             custom_level = "Medium" // High, Medium, Low
             custom_description = "<p>Multiple CRLF injection vulnerabilities in PHPMailer before 5.2.14 allow attackers to inject arbitrary SMTP commands via CRLF sequences in an (1) email address to the validateAddress function in class.phpmailer.php or (2) SMTP command to the sendCommand function in class.smtp.php.</p><p>Fixed in PHPMailer 5.2.14.</p><p>Please download new version from <a href='https://github.com/PHPMailer/PHPMailer'>https://github.com/PHPMailer/PHPMailer</a></p>"
@@ -22,7 +22,7 @@ rule CVE_2015_8476
 			$v5_0_0  = /const\s+\VERSION\s+=\s+(\'|\")5.0.0(\'|\")/
 			$v2_3 = /public\s+\$Version\s+=\s+(\'|\")2.3(\'|\")/
 			$v2_2 = /public\s+\$Version\s+=\s+(\'|\")2.2(\'|\")/
-			$v2_0_3 = /var\s+\$Version\s+=\s+(\'|\")2.0.3(\'|\")/
+			$v2_0_3 = /public\s+\$Version\s+=\s+(\'|\")2.0.3(\'|\")/
 
 			
 	condition:
